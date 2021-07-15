@@ -1,0 +1,7 @@
+DOM in js
+How to include js in html files
+(box-shadow) for pics
+Access and modify html elements (document.getElementById())
+events in js (onclick() for sorting stats table)
+when cursor hovers img zooms a bit(js-onhover(), css-onhover/zoom)
+border-radius

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>FC BARCELONA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+        .bgimg {
+            background-image: url('Camp-Nou')
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+        }
+        
+        body, html {
+            height: 100%;
+            margin: 0;
+            }
+
+        p {
+            text-align: justify;
+            margin: 2rem;
+        }
+
+        h3 {
+            margin: 2rem;
+            text-align: center;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+        .text-dark.w-50 {
+            text-align: center;
+        }
+        
+        th {
+            cursor: pointer;
+        }
+        td {
+            text-align: center;
+        }
+
+        img {
+            float: left;
+            margin: 1rem;
+            border:2px solid rgba(107, 106, 106, 0);
+            -moz-box-shadow: 10px 10px 5px rgba(107, 107, 107, 0);
+            -webkit-box-shadow: 10px 10px 5px rgba(107, 107, 107, 0), 0.781);
+            box-shadow: 10px 10px 5px rgba(107, 107, 107, 0);
+            -moz-border-radius:25px;
+            -webkit-border-radius:25px;
+            border-radius:8px;
+        }
+
+        div.polaroid {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 8px
+        }
+
+        .Honours {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.1); 
+            -webkit-transform: scale(1.1); 
+            transform: scale(1.1); 
+        }
+
+        .custom-shadow {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .navbar {
+            background-color: rgb(6, 6, 128);
+        }
+
+        .navbar-brand {
+            height: 35px;
+        }
+
+        .down-size {
+            height : 40px;
+            width : 45px;
+        }
+
+        .Records {
+            background-color: rgb(230, 230, 233);
+        }
+
+        .navbar-right {
+            float: right;
+            padding:5px 5px;
+        }
+
+    </style>
+
+    <body style="background-color:rgb(255, 255, 255)" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img class="down-size" src="fc-barcelona-logo-svg-vector.svg" alt="FC Barcelona badge"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-right mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#history"><b>History </b><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#prominent-figures"><b>Prominent Figures </b><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#player-records"><b>Player Records </b><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#honours"><b>Honours </b><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.instagram.com/fcbarcelona/"><i class="fab fa-instagram"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://twitter.com/FCBarcelona?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.youtube.com/channel/UC14UlmYlSNiQCBe9Eookf_A"><i class="fab fa-youtube"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://www.facebook.com/fcbarcelona/"><i class="fab fa-facebook-f"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="bgimg">
+            <img src="Camp-Nou.jpg" alt="Camp Nou" width="1230" height="525">
+        </div>
+        
+        <div class="container">
+            <h5 class="text-dark">Welcome to the FC Barcelona webpage. You can find all about the club FC Barcelona here.</h5>
+        </div>
+
+        <h3 class="text-dark" id="history"><b>History:</b></h3>
+        <p class="text-dark">The history of Futbol Club Barcelona goes from the football club's founding in 1899 and up to current time. FC Barcelona, also known simply as Barcelona and familiarly as Barça, is based in Barcelona, Catalonia, Spain. The team was founded in 1899 by a group of Swiss, English and Spanish footballers led by Joan Gamper. The club played amateur football until 1910 in various regional competitions. In 1910, the club participated in their first of many European competitions, and has since amassed fourteen UEFA trophies and a sextuple. In 1928, Barcelona co-founded La Liga, the top-tier in Spanish football, along with a string of other clubs. As of 2020, Barcelona has never been relegated from La Liga, a record they share with Athletic Bilbao and arch-rival Real Madrid.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                        <a href="https://en.wikipedia.org/wiki/File:FC_Barcelona_1910.jpg">
+                            <div class="zoom">
+                            <img class="custom-shadow" src="Barca1910.jpg" alt="FC Barcelona in 1910" width="500" height="300" margin: 2rem style="width:100%">
+                            </div>
+                        </a>
+                </div>
+                <div class="col-6">
+                        <a href="https://en.wikipedia.org/wiki/File:FC_Barcelona_1928-1929.JPG">
+                            <div class="zoom">
+                            <img class="custom-shadow" src="CDR1928.jfif" alt="CDR winning squad in 1928" width="500" height="300" margin: 2rem style="width:100%">
+                            </div>
+                        </a>
+                </div>
+            </div>
+        
+            <div class="container">
+                <h3 class="text-dark" id="prominent-figures"><b>Prominent Figures:</b></h3>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://en.wikipedia.org/wiki/File:Joan_Gamper_1910_year.jpg">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="JoanGamper.jpg" alt="Founder - Joan Gamper" width="200" height="300" float: left margin: 1rem>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-9">
+                        <p class="text-dark"><b><font size="+2">Joan Gamper:</font></b></p>
+                        <p class="text-dark">
+                            On 22 October 1899, Joan Gamper placed an advertisement in Los Deportes declaring his wish to form a football club; a positive response resulted in a meeting at the Gimnasio Solé on 29 November. Eleven players attended: Walter Wild (the first director of the club), Lluís d'Ossó, Bartomeu Terradas, Otto Kunzle, Otto Maier, Enric Ducal, Pere Cabot, Josep Llobet, John Parsons and William Parsons. As a result, Football Club Barcelona was born. 
+                        </p>
+                        <p class="text-dark">
+                            The blue and red colours of the shirt were first worn in a match against Hispania in 1900; the prevailing Catalonia conception is that the colours were chosen by Joan Gamper and are those of his home team, FC Basel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-9">
+                        <p class="text-dark"><b><font size="+2">László Kubala:</font></b></p>
+                        <p class="text-dark">
+                            Kubala signed for FC Barcelona on 15 June 1950, and as part of the deal, Ferdinand Daučík also became the Barcelona coach.
+                        </p>
+                        <p class="text-dark">
+                            In his first La Liga season, 1951–52, Kubala scored 26 goals in 19 games. He also scored in the Copa del Rey final as Barcelona beat Valencia 4–2. This season proved to be one of the club's most successful.
+                        </p>
+                    
+                        <p class="text-dark">
+                            Kubala missed much of the 1952–53 season after contracting tuberculosis, which threatened to end his playing career. However, he made a miraculous recovery and returned to help Barcelona retain both La Liga and the Copa del Generalísimo. He also scored again in the Copa final win, a 2–1 win over Athletic Bilbao. During his time with Barcelona, he scored a total of 14 hat-tricks.
+                        </p>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Kubala#FC_Barcelona">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Kubala.jfif" alt="László Kubala" width="200" height="300" float: right margin: 1rem>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://en.wikipedia.org/wiki/Johan_Cruyff">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Cruyff.jpg" alt="Johan Cruyff" width="250" height="350" float: left margin: 1rem>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-9">
+                        <p class="text-dark"><b><font size="+2">Johan Cruyff:</font></b></p>
+                        <p class="text-dark">
+                            Johan Cruyff joined FC Barcelona first as a player in 1973 and guided the team to its first La Liga title in 14 years including a 5-0 victory against Real Madrid in Santiago Bernabeu.
+                        </p>
+                        <p class="text-dark">
+                            "El Salvador" earned the 'European Player of the Year' the following year.
+                        </p>
+                        <p class="text-dark">
+                            His most memorable moment as a player of Barcelona came in a match against Atletico de Madrid when he scored an athletic goal dubbed as "<a href="https://www.youtube.com/watch?v=Rg7MFjVVfUI&ab_channel=susee" class="text-dark"><u>Cruyff's Impossible Goal</u></a>". 
+                        </p>
+                        <p class="text-dark">
+                            He came back as a coach in 1988 and revolutionized the club's style of play by implementing "Total Football" throughout all the teams including youth ranks and popularised "Tiki-Taka" style of play which defines the club to this day.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-9">
+                        <p class="text-dark"><b><font size="+2">Josep "Pep" Guardiola:</font></b></p>
+                        <p class="text-dark">
+                            Pep Guardiola is one of the first players to emerge out of La Masia into the first team and was part of Cruyff's "Dream Team".
+                        </p>
+                        <p class="text-dark">
+                            He was such a crucial part of the team playing as a defensive midfielder that the team  was built around him. He went on to captain the side.
+                        </p>
+                        <p class="text-dark">
+                            He later came back as a coach, first for the B team, and then in 2008-09 season he coached the first team and went on to win the sextuple becoming the first team in the world to achieve the feat.
+                        </p>
+                        <p class="text-dark">
+                            The club won 14 trophies in 4 years under his management, which is a club record, before taking a short sabbatical.
+                        </p>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="https://en.wikipedia.org/wiki/Pep_Guardiola">
+                        <div class="zoom">    
+                            <img class="custom-shadow" src="Pep.jpg" alt="Pep Guardiola" width="250" height="350" float: right margin: 1rem>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <a href="https://en.wikipedia.org/wiki/Luis_Enrique">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Luis-Enrique.jpg" alt="Luis Enrique" width="250" height="400" float: left margin: 1rem>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-9">
+                        <p class="text-dark"><b><font size="+2">Luis Enrique:</font></b></p>
+                        <p class="text-dark">
+                            Luis Enrique is one of the few players who have played for FC Barcelona as well as Real Madrid.
+                        </p>
+                        <p class="text-dark">
+                            A versatile player who could play in midfield and as forward, he has appeared over 200 times for the club accumulating 73 goals. He too eventually went on to captain the team.
+                        </p>
+                        <p class="text-dark">
+                            He coached the secondary team in 2008 before venturing in different clubs and returned to manage the first team in 2015.
+                        </p>
+                        <p class="text-dark">
+                            The team won the treble that year becoming the first team to achieve the feat twice, with the iconic MSN (Messi, Suarez, Neymar) trio up front.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <p class="text-dark"><b><font size="+2">Lionel Messi</font></b></p>
+                        <p class="text-dark">
+                            Lionel Messi is widely considered as one of the best players ever to represent the club.
+                        </p>
+                        <p class="text-dark">
+                            Joined the academy at 13 years old he has rised through the ranks to play for the first team making his debut at the age of 17 and is currently one of the most decorated player in the club's history and the football world.
+                        </p>
+                        <p class="text-dark">
+                            The Argentinian is the highest goal scorer and assist provider for the club.
+                        </p>
+                        <p class="text-dark">
+                            He has won the prestigious <a href="https://www.youtube.com/watch?v=ucQaPfjufIQ" class="text-dark"><u>Ballon d'Or</u></a> award 6 times playing for the club which is the highest number of times an individual player has won it.
+                        </p>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="https://en.wikipedia.org/wiki/Lionel_Messi">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Messi.jpg" alt="Lionel Messi" width="300" height="450" margin: 1rem>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div> 
+
+        <div class="Records">
+            <br>
+            <h3 class="text-dark" id="player-records"><b>Player Records:</b></h3>
+            <br>
+            <h5 class="text-dark"><b>Most capped players:</b></h5>
+            <table class="table" id="myTable1">
+                <thead>
+                    <tr>
+                        <th class="text-dark w-50" onclic="sortTable(0, 'myTable1')">Player</th>
+                        <th class="text-dark w-50" onclick="sortTable(1, 'myTable1')">Number of appearances</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-dark">Lionel Messi(ARG)</td>
+                        <td class="text-dark">778*</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Xavi(ESP)</td>
+                        <td class="text-dark">767</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Andres Iniesta(ESP)</td>
+                        <td class="text-dark">674</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Sergio Busquets(ESP)</td>
+                        <td class="text-dark">629*</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Carles Puyol(ESP)</td>
+                        <td class="text-dark">593</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            
+            <h5 class="text-dark"><b>Highest goal scorers:</b></h5>
+            <table class="table" id="myTable2">
+                <thead>
+                    <tr>
+                        <th class="text-dark w-50" onclick="sortTable(0, 'myTable2')">Player</th>
+                        <th class="text-dark w-50" onclick="sortTable(1, 'myTable2')">Goals scored</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-dark">Lionel Messi(ARG)</td>
+                        <td class="text-dark">672*</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Cesar Rodriguez(ESP)</td>
+                        <td class="text-dark">232</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Luis Suarez(URU)</td>
+                        <td class="text-dark">198</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Laszlo Kubala(HUN)</td>
+                        <td class="text-dark">194</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Josep Samiter(ESP)</td>
+                        <td class="text-dark">184</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <h5 class="text-dark"><b>Top assist providers:</b></h5>
+            <table class="table" id="myTable3">
+                <thead>
+                    <tr>
+                        <th class="text-dark w-50" onclick="sortTable(0,  'myTable3')">Player</th>
+                        <th class="text-dark w-50" onclick="sortTable(1, 'myTable3')">Assists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-dark">Lionel Messi(ARG)</td>
+                        <td class="text-dark">305*</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Xavi(ESP)</td>
+                        <td class="text-dark">185</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Andres Iniesta(ESP)</td>
+                        <td class="text-dark">138</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Luis Suarez(URU)</td>
+                        <td class="text-dark">113</td>
+                    </tr>
+                    <tr>
+                        <td class="text-dark">Dani Alves(BRA)</td>
+                        <td class="text-dark">101</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            </div>
+            <br>
+        </div>
+
+        <div class="Honours">
+        <br>
+        <h3 class="text-dark" id="honours"><b>Honours:</b></h3>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="https://en.wikipedia.org/wiki/UEFA_Champions_League">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Champions-League.png" alt="UCL" width="300" height="200">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-8">
+                        <h5 class="text-dark"><b>UEFA Champions League:</b></h5>
+                        <p class="text-dark">FC Barcelona won its first UCL in 1992 courtesy of a powerful free kick from <a href="https://www.youtube.com/watch?v=q_zRwnaXaNs&ab_channel=ClassicFootball" class="text-dark"><u>Ronald Koeman</u></a> in the injury time.</p>
+                        <p class="text-dark">Since then they have gone on it win it 4 more times whilst achieving the treble twice becoming one of the most succesful teams in the competition's history.</p>
+                        <p class="text-dark">Years won - 1991/92, 2005/06, 2008/09, 2010/11, 2014/15.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-8">
+                        <h5 class="text-dark"><b>La Liga:</b></h5>
+                        <p class="text-dark">FC Barcelona won its first La Liga title in 1929 which was the inaugural season.</p>
+                        <p class="text-dark">The club has won 26 times which is the second highest number of times a team has won the title.</p>
+                        <p class="text-dark">Years won - 1928/29, 1943/44, 1946/47, 1947/48, 1950/51, 1951/52, 1957/58, 1958/59, 1972/73, 1983/84, 1989/90, 1990/91, 1991/92, 1992/93, 1996/97, 1997/98, 2003/04, 2004/05, 2007/08, 2008/09, 2009/10, 2011/12, 2013/14, 2014/15, 2016/17, 2017/18.</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://en.wikipedia.org/wiki/La_Liga">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="la-liga.png" alt="La Liga" width="300" height="200">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="https://en.wikipedia.org/wiki/Copa_del_Rey">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Spanish-Cup.png" alt="Copa del Rey" width="300" height="200">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-8">
+                        <h5 class="text-dark"><b>Copa del Rey:</b></h5>
+                        <p class="text-dark">The club has won a record 31 titles in Copa del Rey competiton.</p>
+                        <p class="text-dark">Years won - 1909/10, 1911/12, 1912/13, 1919/20, 1921/22, 1924/25, 1925/26, 1927/28, 1941/42, 1950/51, 1951/52, 1952/53, 1956/57, 1958/59, 1962/63, 1967/68, 1970/71, 1977/78, 1980/81, 1982/83, 1987/88, 1989/90, 1996/97, 1997/98, 2008/09, 2011/12, 2014/15, 2015/16, 2016/17, 2017/18, 2020/21.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-8">
+                        <h5 class="text-dark"><b>FIFA Club World Cup:</b></h5>
+                        <p class="text-dark">FC Barcelona has won the title 3 times becoming one of the most succesful teams in the competition.</p>
+                        <p class="text-dark">Years won - 2009/10, 2011/12, 2015/16.</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="https://en.wikipedia.org/wiki/FIFA_Club_World_Cup">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="Fifa-Club-World-Cup.png" alt="FIFA Club WC" width="300" height="200">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="https://en.wikipedia.org/wiki/Supercopa_de_Espa%C3%B1a">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="supercopa-españa.png" alt="Supercopa de Espana" width="300" height="250">
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-8">
+                        <h5 class="text-dark"><b>Supercopa de Espana:</b></h5>
+                        <p class="text-dark">FC Barcelona has won the trophy for a record 13 times.</p>
+                        <p class="text-dark">Years won - 1983/84, 1991/92, 1992/93, 1994/95, 1996/97, 2005/06, 2006/07, 2009/10, 2010/11, 2011/12, 2013/14, 2016/17, 2018/19.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-7">
+                        <h5 class="text-dark"><b>UEFA Super Cup:</b></h5>
+                        <p class="text-dark">FC Barcelona has won the title 5 times in 9 appearances both of which are a record.</p>
+                        <p class="text-dark">Years won - 1992/93, 1997/98, 2009/10, 2011/12, 2015/16.</p>
+                    </div>
+                    <div class="col-5">
+                        <a href="https://en.wikipedia.org/wiki/UEFA_Super_Cup">
+                        <div class="zoom">
+                            <img class="custom-shadow" src="European-Super-Cup.png" alt="UEFA Super Cup" width="400" height="300">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            <br>
+            </div>
+        </div>
+
+        <script>
+            function sortTable(n, myTable) {
+              var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+              table = document.getElementById(myTable);
+              switching = true;
+              //Set the sorting direction to ascending:
+              dir = "asc"; 
+              /*Make a loop that will continue until
+              no switching has been done:*/
+              while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i = 1; i < (rows.length - 1); i++) {
+                  //start by saying there should be no switching:
+                  shouldSwitch = false;
+                  /*Get the two elements you want to compare,
+                  one from current row and one from the next:*/
+                  x = rows[i].getElementsByTagName("TD")[n];
+                  y = rows[i + 1].getElementsByTagName("TD")[n];
+                  /*check if the two rows should switch place,
+                  based on the direction, asc or desc:*/
+                  if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                      //if so, mark as a switch and break the loop:
+                      shouldSwitch= true;
+                      break;
+                    }
+                  } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                      //if so, mark as a switch and break the loop:
+                      shouldSwitch = true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldSwitch) {
+                  /*If a switch has been marked, make the switch
+                  and mark that a switch has been done:*/
+                  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                  switching = true;
+                  //Each time a switch is done, increase this count by 1:
+                  switchcount ++;      
+                } else {
+                  /*If no switching has been done AND the direction is "asc",
+                  set the direction to "desc" and run the while loop again.*/
+                  if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                  }
+                }
+              }
+            }
+        </script>
+
+    </body>
+</html>
